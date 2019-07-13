@@ -3,9 +3,11 @@ using CastleGrimtol.Project.Interfaces;
 
 namespace CastleGrimtol.Project.Models
 {
-  public class Player : IPlayer
+  public class Asset : Item
   {
-    public string PlayerName { get; set; }
-    public List<Item> Inventory { get; set; }
+    public Asset(string name, string description) : base(name, description)
+    {
+
+    }
   }
 }
